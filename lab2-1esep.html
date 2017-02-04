@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>min</title>
+
+    </head>
+    <body>
+      
+<script>
+    
+var array = [];           
+var random;          
+
+while (array.length <= 4) {
+    random = Math.floor(Math.random() * 50); 
+       array.push(random);         
+ }
+document.write("Array: ",array);
+
+var minimum = array[0];
+for (var i = 0; i<array.length; i++){
+    if(minimum > array[i]){
+        minimum = array[i];
+    } 
+}
+document.write("<br>min: ",minimum);
+</script>
+
+    </body>
+</html>

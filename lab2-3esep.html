@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Even sum</title>
+
+    </head>
+    <body>
+      
+<script>
+    
+var array = [];           
+var random,sum = 0;          
+
+while (array.length <= 4) {
+    random = Math.floor(Math.random() * 50); 
+       array.push(random);         
+ }
+document.write("Array: ",array);
+
+for (var i = 0; i<array.length; i++){
+    if (array[i]%2==0){
+        sum += array[i];
+    }
+}
+document.write("<br>Even sum: ",sum);
+</script>
+
+    </body>
+</html>
