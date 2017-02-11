@@ -10,11 +10,11 @@
 <script>
     
 var array = [1,2,3,4,5];           
-var x = 9, n =1;
+var x = 2;
 document.write("first array: ", array);
 for (var i = 0; i<array.length; i++){
-    if (array[i]==n){
-    array.splice(n,0,x);
+    if (array[i]==x){
+    array.splice(i,1);
     } 
     
 }
